@@ -1,0 +1,4 @@
+#!/bin/bash
+shopt -s expand_aliases
+source ~/.bash_aliases
+urxvt -g 166x48+120+55 -title Main &
