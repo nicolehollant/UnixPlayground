@@ -1,0 +1,45 @@
+#!/bin/bash
+shopt -s expand_aliases
+source ~/.bash_aliases
+
+STR="mountain.jpg"
+
+if [ $1 -eq 1 ]
+then
+	STR="mountain.jpg"
+fi
+
+if [ $1 -eq 2 ]
+then
+    STR="FallPath.jpg"
+fi
+
+if [ $1 -eq 3 ]
+then
+    STR="osx-1526788817045-3866.jpg"
+fi
+
+if [ $1 -eq 4 ]
+then
+    STR="TwentyEXXEXX.png"
+fi
+
+if [ $1 -eq 5 ]
+then
+    STR="Yosemite.jpg"
+fi
+
+if [ $1 -eq 6 ]
+then
+    STR="Creek.jpg"
+fi
+
+clear
+if [ -n "$2" ]
+then
+	xrdb -load ~/Xdefaults/.Xdefaults$2opaque
+	rxvt-unicode -g 56x15+1310+70 -title Background -e sh -c "ranger --selectfile ~/Pictures/Wallpapers/$STR; bash" &
+	xrdb -load ~/Xdefaults/.Xdefaults$2
+
+fi
+

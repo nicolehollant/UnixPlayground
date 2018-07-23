@@ -116,7 +116,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#export PS1='\[\033[0;35m\]\h\[\033[0;32m\]/\[\033[0;36m\]\W\[\033[00m\]: '
+#Pintos BS
 export PS1='\[\033[1;95m\]\h\[\033[1;32m\]/\[\033[1;36m\]\W\[\033[00m\]: '
 export PATH=$PATH:$HOME/gitstuff/PointersSuck/pintos/src/utils
 GDBMACROS="~/gitstuff/PointersSuck/pintos/src/misc/gdb-macros"
+
+#scripts
+export PATH=$PATH:$HOME/Script
+
+#Flutter
+export PATH=$PATH:$HOME/flutterStuff/flutter/bin
+
+#Android Studio
+export PATH=$PATH:$HOME/androidStudio/android-studio/bin

@@ -1,0 +1,95 @@
+!!xrdb -load ~/.Xdefaults 
+
+URxvt.termName: rxvt
+!URxvt.transparent: false
+!URxvt.shading: 103
+URxvt.urlLauncher: google-chrome
+URxvt.cursorBlink: true
+URxvt.fading: 5%
+URxvt.fadeColor: #5C1767
+URxvt.tintColor: #F4D6F0
+URxvt.mouseWheelScrollPage: true
+URxvt.secondaryScroll: true
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.secondaryScreen: 1
+!!URxvt.secondaryScroll: 0
+
+!URxvt.font: 9x15
+URxvt.font: xft:Fantasque Sans Mono:pixelsize=18:antialias=true
+!URxvt.font: xft:Comic Sans MS:pixelsize=15
+!URxvt.letterSpace: -5
+URxvt.scrollBar: false
+URxvt.secondaryWheel: true
+
+URxvt.internalBorder: 10
+URxvt.externalBorder: 10
+
+URxvt.color0: #F4D6F0
+URxvt.color1: #50E4A6
+URxvt.color2: #4E9A06
+URxvt.color3: #C4A000
+URxvt.color4: #3465A4
+URxvt.color5: #75507B
+URxvt.color6: #06989A
+URxvt.color7: #515F42
+URxvt.color8: #555753
+URxvt.color9: #74bcaa
+URxvt.color10: #AB1BC4
+URxvt.color11: #0BD1C5
+URxvt.color12: #0EDABB
+URxvt.color13: #AD7FA8
+URxvt.color14: #4C8181
+URxvt.color15: #309AB7
+
+URxvt.colorBD: #F4D6F0
+URxvt.colorIR: #F4D6F0
+URxvt.colorUL: #F4D6F0
+URxvt.highlightColor: #ADA6FE
+URxvt.highlightTextColor: #5C1767
+!URxvt.borderColor: #F4D6F0
+
+
+!!font
+!!URxvt.foreground: #F4D6F0
+URxvt.depth: 24
+URxvt.foreground: #F79BEC
+!!background color
+!URxvt.background: #5C1767
+!URxvt.background:rgba:0092/0023/0103/cccc
+URxvt.background: #540931
+URxvt.borderColor: #540931
+URxvt.buffered: true
+
+!! PERL STUFF
+URxvt.perl-ext-common:  default,matcher,vtwheel,font-size
+URxvt.url-launcher:     /usr/bin/chromium
+URxvt.matcher.button:   1
+
+!! CLIPBOARD
+!URxvt.keysym.C-c:   perl:clipboard:copy
+!URxvt.keysym.C-v:   perl:clipboard:paste
+!URxvt.keysym.C-S-v: perl:clipboard:paste_escaped
+!URxvt.clipboard.autocopy: true
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+
+!! FONT SIZE
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+!! Annoying ctrl-shft popup
+URxvt.iso14755: false
+URxvt.iso14755_52: false

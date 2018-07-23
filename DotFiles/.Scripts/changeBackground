@@ -34,9 +34,14 @@ then
     STR="Creek.jpg"
 fi
 
+if [ $1 -eq 7 ]
+then
+    STR="mohaveBackground.jpg"
+fi
+
 gsettings set org.gnome.desktop.background picture-uri file:$HOME/Pictures/Wallpapers/$STR
 
 if [ -n "$2" ]
 then
-	~/.Scripts/urxvtProfiles $2
+	~/Scripts/urxvtProfiles $2
 fi

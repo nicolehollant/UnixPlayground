@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" open-window-count="2" score="0" last-seen="1532313511"/>
+    <application id="update-manager.desktop" open-window-count="1" score="0" last-seen="1532313340"/>
+    <application id="code.desktop" open-window-count="0" score="2145" last-seen="1531796080"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="2157" last-seen="1532313460"/>
+    <application id="rxvt-unicode.desktop" open-window-count="1" score="129" last-seen="1532313511"/>
+  </context>
+</application-state>
