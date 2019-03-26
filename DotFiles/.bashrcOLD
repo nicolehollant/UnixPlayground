@@ -129,17 +129,3 @@ export PATH=$PATH:$HOME/flutterStuff/flutter/bin
 
 #Android Studio
 export PATH=$PATH:$HOME/androidStudio/android-studio/bin
-
-#Algs4
-export CLASSPATH=$CLASSPATH:/hdd/DataStructures/algs4.jar
-export CLASSPATH=$CLASSPATH:/hdd/DataStructures/junit-4.10.jar
-
-#export CLASSPATH=$CLASSPATH:/$HOME/jars/lwjglAll/lwjgl.jar
-#export CLASSPATH=$CLASSPATH:/$HOME/jars/lwjgl-2.9.3/jar/lwjgl.jar
-export CLASSPATH=$CLASSPATH:/$HOME/jars/slickUtil/slick-util.jar
-
-#Chrome Driver
-export PATH=$PATH:/usr/bin/chromedriver
-
-
-# prof 3

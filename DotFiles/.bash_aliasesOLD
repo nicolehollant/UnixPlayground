@@ -7,17 +7,6 @@ shopt -s expand_aliases
 #goes to relevant dir
 alias beans='cd ~/gitstuff/PointersSuck/pintos/src/userprog'
 alias pointers='cd ~/gitstuff/PointersSuck'
-alias p='cd ~/gitstuff/Projects'
-alias ml='cd ~/Class/MachineLearning/'
-alias h='cd /hdd'
-alias ws='cd /hdd/WebStuff'
-
-alias virt='source ~/venv/bin/activate'
-alias jup='jupyter notebook'
-alias dhost='ssh colhol7@colehollant.com'
-scpdist(){
-		scp -r dist/ colhol7@colehollant.com:/home/colhol7/colehollant.com/$1
-}
 
 #launches vs code and emulator
 fcode(){
@@ -27,7 +16,7 @@ fcode(){
 
 #launches chrome lol
 launchChrome(){
-	google-chrome &>/dev/null & 
+	google-chrome &>/dev/null 
 }
 
 alias chrome=launchChrome
@@ -82,19 +71,19 @@ set-title(){
 }
 
 alias helpMe='less ~/Scripts/LinuxDooDads'
-alias processing='~/processing-3.4/processing'
 
 
 
-alias showFox='feh --geometry 595x360+1300+49 /hdd/Pictures/Wallpapers/TwentyEXXEXX.png'
-alias showMountain='feh --geometry 595x360+1300+49 /hdd/Pictures/Wallpapers/mountain.jpg'
+
+alias showFox='feh --geometry 595x360+1300+49 ~/Pictures/Wallpapers/TwentyEXXEXX.png'
+alias showMountain='feh --geometry 595x360+1300+49 ~/Pictures/Wallpapers/mountain.jpg'
 makeRice(){
 	wmctrl -r :ACTIVE: -N main
 	wmctrl -e 0,30,50,800,430 -r main
 	showFox &
 	clear
 	rxvt-unicode -g 78x26+30+524 -title SysInfo -e sh -c "neofetch; bash" &
-	rxvt-unicode -g 102x29+852+467 -title Pipes -e sh -c "pipes.sh; bash" &
+	rxvt-unicode -g 102x29+852+467 -title Pipes -e sh -c ".pipes/pipes.sh/pipes.sh; bash" &
 	rxvt-unicode -g 40x18+852+48 -title G-Unix -e sh -c "Scripts/printGUnix; bash" &
 	#gnome-terminal --geometry 101x28-238-100 -- ".pipes/pipes.sh/pipes.sh"
 	#gnome-terminal --geometry 40x17-238+56 -- ".Scripts/printGUnix"
@@ -103,7 +92,6 @@ makeRice(){
 makeRice2(){
 	wmctrl -r :ACTIVE: -N temp
 	wmctrl -e 0,30,50,800,430 -r temp
-	showMountain &
 	background $1 $2
 	rxvt-unicode -g 78x21+30+50 -title main &
 	rxvt-unicode -g 78x26+30+524 -title SysInfo -e sh -c "neofetch; bash" &
